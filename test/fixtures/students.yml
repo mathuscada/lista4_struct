@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  matricula: MyString
+  email: MyString
+  birth_date: 2021-09-27 14:53:33
+  teacher: one
+
+two:
+  name: MyString
+  matricula: MyString
+  email: MyString
+  birth_date: 2021-09-27 14:53:33
+  teacher: two
