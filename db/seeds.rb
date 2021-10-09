@@ -13,3 +13,5 @@ Student.create([{name: 'Matheus', matricula: '211112323', email: 'matheusbt@gmai
     {name: 'Jéssica', matricula: '200014598', email: '200014598@aluno.unb.br', birth_date: '2000-02-29', teacher_id: 1},
     {name: 'Dom Pedro 3', matricula: '150012314', email: 'domp2@outlook.com', birth_date: '1999-09-07', teacher_id: 1},
     {name: 'Xuxa', matricula: '190121122', email: 'rainhadosbaixinhos@gmail.com', birth_date: '2002-06-30', teacher_id: 2}])
+
+Admin.create(email: "apcadmin@unb.br", password: "123456")

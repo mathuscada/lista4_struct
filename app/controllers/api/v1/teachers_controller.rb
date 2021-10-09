@@ -1,4 +1,5 @@
 class Api::V1::TeachersController < ApplicationController
+    acts_as_token_authentication_handler_for Admin, only: [:create, :update, :delete]
     def index
         teachers = Teacher.all
         render json: teachers, status: :ok

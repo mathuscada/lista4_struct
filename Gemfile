@@ -44,3 +44,7 @@ gem 'figaro'
 
 # Validating dates
 gem 'validates_timeliness'
+
+# User authentication
+gem 'devise'
+gem 'simple_token_authentication'

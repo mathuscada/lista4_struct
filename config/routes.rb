@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :admins, skip: :all
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'login', to: 'admin#login'
+  get 'admin', to: 'admin#show'
+  get 'logout', to: 'admin#logout'
+  get 'authentication_failure', to: 'application#authentication_failure', as: :authentication_failure
+  put 'authentication_failure', to: 'application#authentication_failure'
+  delete 'authentication_failure', to: 'application#authentication_failure'
   namespace 'api' do
     namespace 'v1' do
       scope 'teachers' do
