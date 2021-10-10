@@ -15,3 +15,8 @@ Student.create([{name: 'Matheus', matricula: '211112323', email: 'matheusbt@gmai
     {name: 'Xuxa', matricula: '190121122', email: 'rainhadosbaixinhos@gmail.com', birth_date: '2002-06-30', teacher_id: 2}])
 
 Admin.create(email: "apcadmin@unb.br", password: "123456")
+
+Teacher.find_by(name: 'Pedro Afonso').image.attach(io: File.open('./public/pessoa_aleatoria1.jpg'), filename: 'pessoa_aleatoria1.jpg')
+Student.find_by(name: 'Jéssica').image.attach(io: File.open('./public/pessoa_aleatoria2.jpg'), filename: 'pessoa_aleatoria2.jpg')
+Language.find(1).documentations.attach(io: File.open('./public/tutorial.pdf'), filename: 'tutorial.pdf')
+Language.find(1).documentations.attach(io: File.open('./public/library.pdf'), filename: 'library.pdf')

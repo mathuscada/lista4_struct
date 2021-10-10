@@ -44,7 +44,8 @@ class Api::V1::StudentsController < ApplicationController
             :matricula,
             :email,
             :birth_date,
-            :teacher_id
+            :teacher_id,
+            :image
         )
     end
 end

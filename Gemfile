@@ -48,3 +48,6 @@ gem 'validates_timeliness'
 # User authentication
 gem 'devise'
 gem 'simple_token_authentication'
+
+# Controller output organization
+gem 'active_model_serializers'

@@ -33,7 +33,8 @@ class Api::V1::LanguagesController < ApplicationController
     def language_params
         params.require(:language).permit(
             :name,
-            :teacher_id
+            :teacher_id,
+            documentations: []
         )
     end
 end

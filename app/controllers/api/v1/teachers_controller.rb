@@ -50,7 +50,8 @@ class Api::V1::TeachersController < ApplicationController
         params.require(:teacher).permit(
             :name,
             :email,
-            :birth_date
+            :birth_date,
+            :image
         )
     end
 end
